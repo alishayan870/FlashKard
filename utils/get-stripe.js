@@ -1,3 +1,4 @@
+'use client'
 //utility function ensures that we only create one instance of Stripe
 import {loadStripe} from '@stripe/stripe-js'
 

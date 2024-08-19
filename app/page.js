@@ -59,9 +59,11 @@ export default function Home() {
     Effortless transform your text into flashcards.
   </Typography>
 
+<SignedIn>
   <Button variant="contained" color="primary" sx={{':hover': {bgcolor: 'black'},mt: 2, mr: 2, bgcolor: "black"}} href="/generate">
-    Get Started
+    Begin Generating
   </Button>
+  </SignedIn>
 
   <Button variant="contained" color="primary" sx={{':hover': {bgcolor: 'black'},mt: 2, mr: 2, bgcolor: "black"}}>
     Learn More
@@ -101,6 +103,8 @@ export default function Home() {
 <Box sx={{my: 6, mx: 2, textAlign: 'center'}}>
   <Typography variant="h4" gutterBottom>Choose your plan</Typography>
   <Grid container spacing={4} justifyContent={"center"}>
+
+    <SignedOut>
     <Grid item xs={4} md={3}>
       <Paper elevation={3} sx={{ padding: 3 }}>
         <Typography variant="h6" gutterBottom>Standard</Typography>
@@ -108,9 +112,12 @@ export default function Home() {
         <Typography gutterBottom>
           Access to basic flashcard features & limited storage.
         </Typography>
-        <Button variant="contained" color="primary" sx={{':hover': {bgcolor: 'black'},mt: 2, mr: 2, bgcolor: "black"}} >Choose Standard</Button>
+        <Button variant="contained" color="primary" sx={{':hover': {bgcolor: 'black'},mt: 2, mr: 2, bgcolor: "black"}} href="/sign-up" >Choose Standard</Button>
       </Paper>
     </Grid>
+    </SignedOut>
+
+    
     <Grid item xs={4} md={3}>
       <Paper elevation={3} sx={{ padding: 3 }}>
         <Typography variant="h6" gutterBottom>Premium</Typography>
@@ -121,6 +128,7 @@ export default function Home() {
         <Button variant="contained" color="primary" sx={{':hover': {bgcolor: 'gold'},mt: 2, mr: 2, bgcolor: "black"}} onClick={handleSubmit}>Choose Premium</Button>
       </Paper>
     </Grid>
+    
   </Grid>
 </Box>
 </>
