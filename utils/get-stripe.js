@@ -1,5 +1,5 @@
 //utility function ensures that we only create one instance of Stripe
-import { loadStripe } from '@stripe/stripe-js'
+import {loadStripe} from '@stripe/stripe-js'
 
 let stripePromise
 
@@ -12,3 +12,4 @@ const getStripe = () => {
 }
 
 export default getStripe
+//1:37
