@@ -65,8 +65,8 @@ export default function Home() {
   </Button>
   </SignedIn>
 
-  <Button variant="contained" color="primary" sx={{':hover': {bgcolor: 'black'},mt: 2, mr: 2, bgcolor: "black"}}>
-    Learn More
+  <Button variant="contained" color="primary" sx={{':hover': {bgcolor: 'black'},mt: 2, mr: 2, bgcolor: "black"}} href="/flashcards">
+    Your Collection
   </Button>
 
 <Box sx={{ my: 6 }}>
