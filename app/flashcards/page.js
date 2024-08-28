@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import { collection, doc, getDoc, setDoc } from "firebase/firestore"
 import { db } from "@/firebase"
 import { useRouter } from "next/navigation"
-import { CardActionArea, CardContent, Typography, Container, Grid, Box, Button } from "@mui/material"
+import { CardActionArea, CardContent, Typography, Container, Grid, Box, Button,Card } from "@mui/material"
 
 
 export default function Flashcards() {
